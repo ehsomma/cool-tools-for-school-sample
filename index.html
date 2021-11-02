@@ -1,12 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    
+    <title>OneNote Bootstrap</title>
+    
+    <!--Custom styles + bootstrap.-->
+    <link rel="stylesheet" href="styles.css">
+
+    <!--Google fonts.-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <p>Sample of the project "Cool tools for school".</p>
+    <div class="container">
+        <!--OneNote title style.-->
+        <h1 class="np-h1">Cool tools for school! <small>(project)</small></h1>
+        <hr class="on-hr-title">
+        <p class="on-date-time-title">saturday, otober 30 2021 10:45 AM <span style="color: blueviolet; font-weight: 600;">v0.2</span></p>
+
+        <!--Title 1 and text large.-->
+        <p class="np-h1">Title 1</p>
+        <p class="np-text-l">Texto destacado (interlineado 16, Segoe UI Semilight). Los blocs de notas de clase de OneNote tienen un área de trabajo personal para cada alumno, una Biblioteca de contenido de documentos y un Espacio de colaboración para lecciones y actividades creativas.</p>
+        
+        <!--Subtitle 2 and text.-->
+        <p class="np-h2">Subtitle 2</p>
+        <p class="np-text">Texto destacado (interlineado 16, Segoe UI Semilight). Los blocs de notas de clase de OneNote tienen un área de trabajo personal para cada alumno, una Biblioteca de contenido de documentos y un Espacio de colaboración para lecciones y actividades creativas.</p>
+        <!--Mini note.-->
+        <p class="np-note1">NOTE: You can paste a mini-template here and customize it. Remember to enclose it with … to facilitate the copy/paste process.</p>
+        
+        <!--Subtitle 3 and text.-->
+        <p class="np-h3">Subtitle 3</p>
+        <p class="np-text">Texto normal. Los <span class="np-strong">blocs de notas</span> de clase de OneNote tienen un área de trabajo personal para cada alumno, una Biblioteca de contenido de documentos y un Espacio de colaboración para lecciones y actividades creativas.</p>
+        <p class="np-text-handwrite-18">Texto normal. Los <strong>blocs de notas</strong> de clase de OneNote tienen un área de trabajo personal para cada alumno, una Biblioteca de contenido de documentos y un Espacio de colaboración para lecciones y actividades creativas.</p>
+        
+        <!--Link.-->
+        <p>Link <a class="link-planner-link" href="#top">mini-template</a> allows documenting, <span class="np-strong">bold</span> (Segoe UI Semibold).</p>
+        
+        <!--Ol.-->
+        <ol>
+            <li><span class="np-strong">Choose</span> a variant of the mini-template (posterior 6).</li>
+            <li>Nested lists:
+                <ol>
+                    <li><span class="np-strong">Choose</span> a variant of the mini-template (posterior 6).</li>
+                </ol>
+            </li>
+            <li><span class="np-strong">Select</span> from the starting mark … (inclusive) to the ending mark … (inclusive) of the mini-template and <span class="np-strong">copy</span> it.</li>
+            <li>Go back to the page where you want to insert the mini-template, <span class="np-strong">select</span> the mark … where you want to insert it and <span class="np-strong">paste</span> it (replacing the … with the mini-template).</li>
+            <li>Edit the content of the mini-template.</li>
+        </ol>
+
+        <!--Note warning.-->
+        <div class="np-note1-bg">
+            <div class="row">
+                <div class="col-1 text-end p-0 np-note1-icon-bg">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#FFC000" class="bi bi-exclamation-triangle" viewBox="0 0 16 16">
+                        <path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.146.146 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.163.163 0 0 1-.054.06.116.116 0 0 1-.066.017H1.146a.115.115 0 0 1-.066-.017.163.163 0 0 1-.054-.06.176.176 0 0 1 .002-.183L7.884 2.073a.147.147 0 0 1 .054-.057zm1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566z"/>
+                        <path d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995z"/>
+                      </svg>
+                </div>
+                <div class="col">
+                    <span class="np-strong">Note</span>: Do not modify the mini-templates here, add the information after pasting the mini-template on the page where you are going to use it.
+                </div>
+            </div>
+        </div>
+        
+        <!--Note suggestion.-->
+        <div class="np-note1-bg">
+            <div class="row">
+                <div class="col-1 text-end p-0 np-note1-icon-bg">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#80397B" class="bi bi-lightbulb" viewBox="0 0 16 16">
+                        <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1z"/>
+                      </svg>
+                </div>
+                <div class="col">
+                    <span class="np-strong">Note</span>: Do not modify the mini-templates here, add the information after pasting the mini-template on the page where you are going to use it.
+                </div>
+            </div>
+        </div>
+
+        <!--Screenshot.-->
+        <div class="my-4">
+            <!--Image links.-->
+            <div style="font-size: small;">
+                See <a href="screenshot.html?img-name=index-screen-sample.png" target="_blank" class="text-decoration-none">full screen
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-box-arrow-up-right align-baseline" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+                        <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+                      </svg>
+                </a><br>
+                See <a href="screenshot.html?img-name=index-screen-sample.png" target="_blank" class="text-decoration-none">full screen (empty template)
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-box-arrow-up-right align-baseline" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+                        <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+                      </svg>
+                </a><br>
+            </div>
+            
+            <!--Image.-->
+            <a href="screenshot.html?img-name=index-screen-sample.png" 
+                target="_blank" 
+                class="text-decoration-none">
+                    <img src="images/index-screen-sample.png" alt="screenshot" class="img-fluid">
+            </a><br>
+            
+            
+        </div>
+        
+        <div class="container">
+            <button type="button" class="btn btn-onenote-color rounded-0" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                Aceptar
+            </button>
+        </div>
+
+        <hr>
+
+        <br>
+        <div class="rounded-2 p-3 mx-3" style="background-color: #FAFAFA;">
+            hola
+        </div>
+        <br>
+        <div>
+            <div class="row mx-3">
+                <div class="col-1 p-3 text-center bg-info" style="flex: 0 0 100px;">
+                    Icono
+                </div>
+                <div class="col p-3 bg-danger">
+                    Texto
+                </div>
+            </div>
+        </div>
+
+        <hr>
+    </div>
+
+    <div class="container">
+        <h1>Hola</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate alias odio, doloremque provident eaque
+            pariatur rem consequuntur non possimus vitae, tempora, culpa nisi iure? Odio molestiae ullam asperiores
+            maxime doloremque!</p>
+
+        <p style="font-family: 'Architects Daughter', cursive; font-size: 22px;">Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. <strong>Cupiditate alias</strong> odio, doloremque provident eaque pariatur rem consequuntur non possimus
+            vitae, tempora, culpa nisi iure? Odio molestiae ullam asperiores maxime doloremque!</p>
+        
+        <p class="h2" style="font-size: 20.0pt; font-weight: 320; color: 0C0C0C;">Title 1</p>
+        <p class="h2" style="font-family: 'Segoe UI Light';  font-size: 20.0pt; color: 0C0C0C;">Title 1</p>
+
+        <p class="h1">h1. Bootstrap heading</p>
+        <p class="h2">h2. Bootstrap heading</p>
+        <p class="h3">h3. Bootstrap heading</p>
+        <p class="h4">h4. Bootstrap heading</p>
+        <p class="h5">h5. Bootstrap heading</p>
+        <p class="h6">h6. Bootstrap heading</p>
+
+        <ul class="">
+            <li>Choose a variant of the mini-template (posterior 6).</li>
+            <li>Nested lists:
+                <ul>
+                    <li>Choose a variant of the mini-template (posterior 6).</li>
+                </ul>
+            </li>
+            <li>It appears completely unstyled.</li>
+            <li>Structurally, it's still a list.</li>
+            <li>However, this style only applies to immediate child elements.</li>
+            <li>This may still come in handy in some situations.</li>
+        </ul>
+
+        <p class="ct2">Texto normal. Los blocs de notas de clase de OneNote tienen un área de trabajo personal para cada alumno, una Biblioteca de contenido de documentos y un Espacio de colaboración para lecciones y actividades creativas.</p>
+        
+        
+
+        <img src="images/index-screen-sample.png" alt="" class="img-fluid">
+        
+
+        <div class="container">
+            <a href="screenshot.html?img-name=index-screen-sample.png" target="_blank" rel="noopener noreferrer">Full screen...</a>
+            <button type="button" class="btn btn-primary rounded-0">
+                Aceptar
+            </button>
+    
+            <button type="button" class="btn btn-onenote-color rounded-0">
+                Aceptar
+            </button>
+    
+            <button type="button" class="btn btn-danger">
+                Aceptar
+            </button>
+    
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary rounded-0" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                Launch static backdrop modal
+            </button>
+        </div>
+        
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary rounded-0" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary rounded-0">Understood</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- https://icons.getbootstrap.com/ -->
+        <img src="node_modules/bootstrap-icons/bootstrap-icons.svg" alt="Bootstrap" width="32" height="32">
+        <i class="bi-alarm" style="font-size: 2rem; color: cornflowerblue;"></i>
+        <i class="bi bi-youtube"></i>
+        asdasd
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube"
+            viewBox="0 0 16 16">
+            <path
+                d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
+        </svg>
+        <div class="text-primary">This is default primary text</div>
+        <div class="text-primary text-opacity-75">This is 75% opacity primary text</div>
+        <div class="text-primary text-opacity-50">This is 50% opacity primary text</div>
+        <div class="text-primary text-opacity-25">This is 25% opacity primary text</div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate alias odio</p>
+    </div>
+    <div class="container bg-warning" style="margin-bottom: 0px;">
+        <p class="text-black">.text-black</p>
+        <p class="text-black-25">.text-black-25</p>
+        <p class="text-black-50">.text-black-50</p>
+        <p class="text-black-75">.text-black-75</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate alias odio</p>
+    </div>
+    <div class="container-fluid bg-danger">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate alias odio</p>
+    </div>
+
+    <div class="container bg-warning">
+        <div class="d-flex bg-info justify-content-center">
+            <div style="min-width: 300px; background: #34850f;">Hola</div>
+        </div>
+    </div>
+
+    <div class="container bg-info bg-opacity-50">
+        <div class="d-flex justify-content-center">
+            <div style="min-width: 500px;">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="bootstrap.min.js"></script>
 </body>
+
 </html>
