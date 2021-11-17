@@ -3,295 +3,770 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
     <title>OneNote Bootstrap</title>
-    
+
     <!--Custom styles + bootstrap.-->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet"
+          href="styles.css">
 
     <!--Google fonts.-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap"
+          rel="stylesheet">
 </head>
 
 <body>
-    <div class="container">
-        <!--OneNote title style.-->
-        <h1 class="np-h1">Cool tools for school! <small>(project)</small></h1>
-        <hr class="on-hr-title">
-        <p class="on-date-time-title">saturday, otober 30 2021 10:45 AM <span style="color: blueviolet; font-weight: 600;">v0.2</span></p>
+    <!--Go to top button.-->
+    <button onclick="topFunction()" id="topButton" title="Go to top">Top</button>
 
-        <!--Title 1 and text large.-->
-        <p class="np-h1">Title 1</p>
-        <p class="np-text-l">Texto destacado (interlineado 16, Segoe UI Semilight). Los blocs de notas de clase de OneNote tienen un área de trabajo personal para cada alumno, una Biblioteca de contenido de documentos y un Espacio de colaboración para lecciones y actividades creativas.</p>
-        
-        <!--Subtitle 2 and text.-->
-        <p class="np-h2">Subtitle 2</p>
-        <p class="np-text">Texto destacado (interlineado 16, Segoe UI Semilight). Los blocs de notas de clase de OneNote tienen un área de trabajo personal para cada alumno, una Biblioteca de contenido de documentos y un Espacio de colaboración para lecciones y actividades creativas.</p>
-        <!--Mini note.-->
-        <p class="np-note1">NOTE: You can paste a mini-template here and customize it. Remember to enclose it with … to facilitate the copy/paste process.</p>
-        
-        <!--Subtitle 3 and text.-->
-        <p class="np-h3">Subtitle 3</p>
-        <p class="np-text">Texto normal. Los <span class="np-strong">blocs de notas</span> de clase de OneNote tienen un área de trabajo personal para cada alumno, una Biblioteca de contenido de documentos y un Espacio de colaboración para lecciones y actividades creativas.</p>
-        <p class="np-text-handwrite-18">Texto normal. Los <strong>blocs de notas</strong> de clase de OneNote tienen un área de trabajo personal para cada alumno, una Biblioteca de contenido de documentos y un Espacio de colaboración para lecciones y actividades creativas.</p>
-        
-        <!--Link.-->
-        <p>Link <a class="link-planner-link" href="#top">mini-template</a> allows documenting, <span class="np-strong">bold</span> (Segoe UI Semibold).</p>
-        
-        <!--Ol.-->
-        <ol>
-            <li><span class="np-strong">Choose</span> a variant of the mini-template (posterior 6).</li>
-            <li>Nested lists:
-                <ol>
-                    <li><span class="np-strong">Choose</span> a variant of the mini-template (posterior 6).</li>
-                </ol>
-            </li>
-            <li><span class="np-strong">Select</span> from the starting mark … (inclusive) to the ending mark … (inclusive) of the mini-template and <span class="np-strong">copy</span> it.</li>
-            <li>Go back to the page where you want to insert the mini-template, <span class="np-strong">select</span> the mark … where you want to insert it and <span class="np-strong">paste</span> it (replacing the … with the mini-template).</li>
-            <li>Edit the content of the mini-template.</li>
-        </ol>
-
-        <!--Note warning.-->
-        <div class="np-note1-bg">
-            <div class="row">
-                <div class="col-1 text-end p-0 np-note1-icon-bg">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#FFC000" class="bi bi-exclamation-triangle" viewBox="0 0 16 16">
-                        <path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.146.146 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.163.163 0 0 1-.054.06.116.116 0 0 1-.066.017H1.146a.115.115 0 0 1-.066-.017.163.163 0 0 1-.054-.06.176.176 0 0 1 .002-.183L7.884 2.073a.147.147 0 0 1 .054-.057zm1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566z"/>
-                        <path d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995z"/>
-                      </svg>
+    <!-- 
+        ****************************
+        Header
+        ****************************
+    -->
+    <div class="container-fluid sticky-top p-0 m-0 on-header">
+        <div class="container py-2">
+            <!--OneNote title style.-->
+            <div class="row py-2">
+                <div class="col-md-10">
+                    <h1 class="np-h1 mt-0">Cool tools for school! <small>(project)</small></h1>
+                    <hr class="on-hr-title">
+                    <p class="on-date-time-title">saturday, november 15 2021 10:45 AM <span class="on-header-version">v0.2</span></p>
                 </div>
-                <div class="col">
-                    <span class="np-strong">Note</span>: Do not modify the mini-templates here, add the information after pasting the mini-template on the page where you are going to use it.
+
+                <!--Index-->
+                <div class="col-md-2">
+                    <a class="nav-link dropdown-toggle text-body" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Index</a>
+                    <ol class="dropdown-menu">
+                        <li><a class="dropdown-item drop-custom" href="#what-is-it">What is it</a></li>
+                        <li><a class="dropdown-item drop-custom" href="#what-is-it-for">What is it for?</a></li>
+                        <li><a class="dropdown-item drop-custom" href="#how-it-is-built">How it is built</a></li>
+                        <li><a class="dropdown-item drop-custom" href="#market-analysis">Market analysis</a></li>
+                        <li><a class="dropdown-item drop-custom" href="#integration">Integration with Microsoft Teams</a></li>
+                        <li><a class="dropdown-item drop-custom" href="#help">Ease of use and help</a></li>
+                        <li><a class="dropdown-item drop-custom" href="#vision">Vision</a></li>
+                        <li><a class="dropdown-item drop-custom" href="#features">Most relevant content and features</a></li>
+                    </ol>
                 </div>
             </div>
         </div>
-        
-        <!--Note suggestion.-->
-        <div class="np-note1-bg">
-            <div class="row">
-                <div class="col-1 text-end p-0 np-note1-icon-bg">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#80397B" class="bi bi-lightbulb" viewBox="0 0 16 16">
-                        <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1z"/>
-                      </svg>
-                </div>
-                <div class="col">
-                    <span class="np-strong">Note</span>: Do not modify the mini-templates here, add the information after pasting the mini-template on the page where you are going to use it.
-                </div>
-            </div>
-        </div>
-
-        <!--Screenshot.-->
-        <div class="my-4">
-            <!--Image links.-->
-            <div style="font-size: small;">
-                See <a href="screenshot.html?img-name=index-screen-sample.png" target="_blank" class="text-decoration-none">full screen
-                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-box-arrow-up-right align-baseline" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
-                        <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
-                      </svg>
-                </a><br>
-                See <a href="screenshot.html?img-name=index-screen-sample.png" target="_blank" class="text-decoration-none">full screen (empty template)
-                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-box-arrow-up-right align-baseline" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
-                        <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
-                      </svg>
-                </a><br>
-            </div>
-            
-            <!--Image.-->
-            <a href="screenshot.html?img-name=index-screen-sample.png" 
-                target="_blank" 
-                class="text-decoration-none">
-                    <img src="images/index-screen-sample.png" alt="screenshot" class="img-fluid">
-            </a><br>
-            
-            
-        </div>
-        
-        <div class="container">
-            <button type="button" class="btn btn-onenote-color rounded-0" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                Aceptar
-            </button>
-        </div>
-
-        <hr>
-
-        <br>
-        <div class="rounded-2 p-3 mx-3" style="background-color: #FAFAFA;">
-            hola
-        </div>
-        <br>
-        <div>
-            <div class="row mx-3">
-                <div class="col-1 p-3 text-center bg-info" style="flex: 0 0 100px;">
-                    Icono
-                </div>
-                <div class="col p-3 bg-danger">
-                    Texto
-                </div>
-            </div>
-        </div>
-
-        <hr>
     </div>
 
-    <div class="container">
-        <h1>Hola</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate alias odio, doloremque provident eaque
-            pariatur rem consequuntur non possimus vitae, tempora, culpa nisi iure? Odio molestiae ullam asperiores
-            maxime doloremque!</p>
+    <!-- 
+        ****************************
+        Banner
+        ****************************
+    -->
+    <!--100%-->
+    <div class="container-fluid np-bgbanner">
+        <!--Max: xl: 1140px (configurado en .scss)-->
+        <div class="container">
+            <div class="row">
+                <!--5 hasta el md, mas chico solo 1-->
+                <div class="col-md-5 justify-content-center align-self-center">
+                    <p class="np-hbanner">Cool Tools for School</p>
+                    <p class="mp-hbanner-small">(project)</p>
+                    <p class="np-textbanner">Experience the power of OneNote <br>to the fullest</p>
 
-        <p style="font-family: 'Architects Daughter', cursive; font-size: 22px;">Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. <strong>Cupiditate alias</strong> odio, doloremque provident eaque pariatur rem consequuntur non possimus
-            vitae, tempora, culpa nisi iure? Odio molestiae ullam asperiores maxime doloremque!</p>
+                </div>
+                <!--7 hasta el md, mas chico solo 1-->
+                <div class="col-md-7">
+                    <a href="screenshot.html?img-name=screen-banner1.png" target="_blank">
+                        <img class="img-fluid img-crisp-edges my-4" src="images/screen-banner1_640.png">
+                    </a>
+                    <!--Image links.-->
+                    <div class="img-link-text mb-3" style="margin-top: -18px;">
+                        See <a href="screenshot.html?img-name=screen-banner1.png"  target="_blank"  class="text-decoration-none">full screen
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-box-arrow-up-right align-baseline" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z" />
+                                <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
         
-        <p class="h2" style="font-size: 20.0pt; font-weight: 320; color: 0C0C0C;">Title 1</p>
-        <p class="h2" style="font-family: 'Segoe UI Light';  font-size: 20.0pt; color: 0C0C0C;">Title 1</p>
+        <!--Note info.-->
+        <div class="np-note1-bg">
+            <div class="row">
+                <div class="col-1 text-end p-0 np-note1-icon-bg">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#4B53BC" class="bi bi-info-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                        <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                      </svg>
+                    
+                </div>
+                <div class="col">
+                    <span class="np-strong">Note</span>: The information in this document is aimed at describing technically and conceptually the project idea  (it is not a Marketing-oriented document). The images in this document <span class="mark">are not prototypes</span>, they are print screens of current templates. The project is in progress.
+                </div>
+            </div>
+        </div>
 
-        <p class="h1">h1. Bootstrap heading</p>
-        <p class="h2">h2. Bootstrap heading</p>
-        <p class="h3">h3. Bootstrap heading</p>
-        <p class="h4">h4. Bootstrap heading</p>
-        <p class="h5">h5. Bootstrap heading</p>
-        <p class="h6">h6. Bootstrap heading</p>
+        <!-- 
+            ****************************
+            What is CTFS?
+            ****************************
+        -->
+        <div class="row mt-5">
+            <!--5 to md, less 12-->
+            <div class="col-md-5">
+                <!--FIX: Bookmark con sticky-top con :target -->
+                <div id="what-is-it"></div>
+                <p class="np2-h2">What is it</p>
+                <p class="np-text-l"><span class="np-strong">Cool Tools for School</span>, is a big OneNote notebook with a lot of tools for student.</p>
+                <p class="np-text-l">It contains a set of well-organized, structured and linked pages and <spam class="np-strong">templates</spam>, <spam class="np-strong">tips</spam> for organization, study, note-taking and research, and many <spam class="np-strong">resources</spam> and tools such as <spam class="np-strong">stickers</spam>, insertable <spam class="np-strong">mini-templates</spam>, and <spam class="np-strong">posters</spam> with educational information for all levels.</p>
+                <p class="np-text-l">All <spam class="np-strong">this</spam> information is organized in such a way that it can be used as a "system" and not as simple templates.</p>
+            </div>
 
-        <ul class="">
-            <li>Choose a variant of the mini-template (posterior 6).</li>
-            <li>Nested lists:
+            <!--7 to md, less 12-->
+            <div class="col-md-7">
+                                
+                <!--Image-->
+                <a href="screenshot.html?img-name=screen-classoverview.png" target="_blank">
+                    <img class="img-fluid img-crisp-edges" src="images/screen-classoverview_640.png">
+                </a>
+
+                <!--Image links.-->
+                <div class="img-link-text">
+                    See <a href="screenshot.html?img-name=screen-classoverview.png"  target="_blank"  class="text-decoration-none">full screen
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-box-arrow-up-right align-baseline" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z" />
+                            <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z" />
+                        </svg>
+                    </a>
+                    <br>
+                    See <a href="screenshot.html?img-name=screen-classoverview-empty.png" target="_blank" class="text-decoration-none">full screen (empty template)
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-box-arrow-up-right align-baseline" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z" />
+                            <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z" />
+                        </svg>
+                    </a><br>
+                </div>
+            </div>
+        </div>
+
+        <!-- 
+            ****************************
+            What is it for?
+            ****************************
+        -->
+        <div class="row mt-5">
+            <!--FIX: Bookmark con sticky-top con :target -->
+            <div id="what-is-it-for"></div>
+            <p class="np2-h2">What is it for?</p>
+            <p>With its <spam class="np-strong">templates</spam>, <spam class="np-strong">tools</spam> and <spam class="np-strong">resources</spam>, Cool Tools for School helps the student with the following:</p>
+            <ul>
+                <li>Manage classes, assignments and exams,</li>
+                <li>Organize their time,</li>
+                <li>Plan study days,</li>
+                <li>Prepare for exams,</li>
+                <li>Set goals,</li>
+                <li>Measure progress,</li>
+                <li>Take notes in class and manage them,</li>
+                <li>And over all..., <spam class="mark">to generate the turn-in content</spam>  in a more productive, professional, organized, fun way and with a touch of personal design, inspired by the <spam class="np-strong">sample data</spam> of each template and <spam class="np-strong">design tips</spam>.</li>
+            </ul>
+        </div>
+        <div class="flex-row justify-content-center">
+            <a href="screenshot.html?img-name=screen-AssignmentPlanner.png" target="_blank"><img src="images/thumbnail-WhatIsIt-1.png"></a>
+            <a href="screenshot.html?img-name=screen-StickersFunny.png" target="_blank"><img src="images/thumbnail-WhatIsIt-2.png"></a>
+            <a href="screenshot.html?img-name=screen-NotesTemplates.png" target="_blank"><img src="images/thumbnail-WhatIsIt-3.png"></a>
+            <a href="screenshot.html?img-name=screen-Assignment-UnitTesting.png" target="_blank"><img src="images/thumbnail-WhatIsIt-4.png"></a>
+            <a href="screenshot.html?img-name=screen-Assignment-ColorTheory.png" target="_blank"><img src="images/thumbnail-WhatIsIt-5.png"></a>
+        </div>
+
+        <!-- 
+            ****************************
+            How it is built
+            ****************************
+        -->
+        <div class="row mt-5">
+            <!--FIX: Bookmark con sticky-top con :target -->
+            <div id="how-it-is-built"></div>
+            <p class="np2-h2">How it is built</p>
+            <div class="col">
+                <p>The <spam class="np-strong">power of OneNote</spam> (with its cloud storage infrastructure, to share your content, page history, backup, etc.) + well-organized templates + guides, documentation and contextual help + insertable mini-templates with standardized design... and a <spam class="mark">good idea</spam>, allows us to develop, what I call "<spam class="np-strong">Light Systems</spam>".
+                    Cool Tools for School <spam class="mark">is a "Light system" made with OneNote</spam>.
+                </p>
+            </div>
+            <div class="col">
+                <p>Cool Tools for School is developed with <spam class="mark">100% of OneNote components </spam>(<spam class="np-strong">text</spam>, <spam class="np-strong">tables</spam>, <spam class="np-strong">links</spam> and <spam class="np-strong">images</spam>) and follows the design and color palette of Microsoft Teams.</p>
+                <p>My experience as a software engineer allowed me to see it, think about it and design it as a system and not as a simple digital planner.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <!--5 to md, less 12-->
+            <div class="col-md-4 text-center justify-content-center align-self-center">
+                <img src="images/thumbnail-HowIsItBuilt-comp.png" alt="">
+            </div>
+            <!--7 to md, less 12-->
+            <div class="col-md-8">
+                <img class="img-fluid img-crisp-edges" src="images/thumbnail-HowIsItBuilt.png" alt="">
+            </div>
+        </div>
+        
+        <!-- 
+            ****************************
+            Market analysis
+            ****************************
+        -->
+        <div class="row mt-5">
+            <div class="col">
+                <!--FIX: Bookmark con sticky-top con :target -->
+                <div id="market-analysis"></div>
+                <p class="np2-h2">Market analysis <spam class="np2-h3">(of digital planners)</spam></p>
+                <p>There is a <spam class="mark">very large market</spam> for <spam class="np-strong">digital planners</spam>, and one of the most searched and sold categories is <spam class="mark">Student Planners</spam>.</p>
+                <p>The current student planners are mostly all the same and are based on a calendar digital planner with added student oriented templates. These are sold through portals like <a href="https://www.etsy.com/es/search?q=digital%20planner&ref=auto-1" target="_blank" rel="noopener noreferrer">Etsy.com</a>.<br>
+                    Most of those planners are .pdf linked kind and are designed by graphic designers to be used with programs such as <spam class="np-strong">Notability</spam> or <spam class="np-strong">Goodnotes</spam> (paid apps).</p>
+                <p>There are some planners for OneNote, but they are bad adaptations of these .pdfs (pdf as background image) and are not specifically designed for OneNote. There are also a few designed for OneNote but they are a set of basic templates.</p>
+                <p>Cool Tools for School is not a calendar adapted for students. Cool Tools for School is a true study planner and will be the most complete that exists in the market, specifically thought for students of all levels and designed specifically for <spam class="np-strong">OneNote</spam>.</p>
+                
+                <p class="np2-h3">Comparison table</p>
+                <img class="img-fluid img-crisp-edges" src="images/screen-CompTable.png">
+            </div>
+        </div>
+
+        <!-- 
+            ****************************
+            Integration with Microsoft Teams
+            ****************************
+        -->
+        <div class="row mt-5">
+            <!--5 to md, less 12-->
+            <div class="col-md-5">
+                <!--FIX: Bookmark con sticky-top con :target -->
+                <div id="integration"></div>
+                <p class="np2-h2">Integration with <br>Microsoft Teams</p>
+                <p class="np-text-l"><spam class="text-decoration-underline">Of course we know that <spam class="np-strong">Microsoft Teams</spam> exists to manage everything related to classes, assignments, exams and communication between students and teachers, and it also has a strong integration with OneNote</spam>.<br>
+                    But with Cool Tools for School, the students will be able to <spam class="np-strong">extend</spam> and <spam class="np-strong">customize</spam> all the information of Microsoft Teams as well as help them to be inspired and <spam class="np-strong">create cool content</spam> for their turn-ins, notes and research.
+                    </p>
+                <p class="np-text-l">Cool Tools for School could be integrated as a separate notebook or as selectable sections when the teacher creates the class and configures the structure of the OneNote class notebook.</p>
+            </div>
+
+            <!--7 to md, less 12-->
+            <div class="col-md-7">
+                <span style="background-color: #FFFF00; font-size: 12px;">(concept)</span> 
+                <!--Image-->
+                <img class="img-fluid img-crisp-edges" src="images/thumbnail-Integration.png">
+            </div>
+        </div>
+
+        <!-- 
+            ****************************
+            Ease of use and help
+            ****************************
+        -->
+        <div class="row mt-5" style="margin-top: 75px !important;">
+            <!--5 to md, less 12-->
+            <div class="col-md-5">
+                <!--FIX: Bookmark con sticky-top con :target -->
+                <div id="help"></div>
+                <p class="np2-h2">Ease of use and help</p>
+                <p class="np-text-l">Cool Tools for School could is very easy to use since each page or template has its <spam class="np-strong">on-screen help</spam>, contextual <spam class="np-strong">FAQ</spam> list, and usage and design <spam class="np-strong">tips</spam>.</p>
+                <p class="np-text-l">In addition, each template come with sample data from a real case based on an IT class (not Lorem ipsum) which allows students to see its use and also helps as inspiration to make the most of its potential.</p>
+                <p class="np-text-l">These on-screen help, contextual FAQs, tips and sample data will not only help the user, <spam class="mark">but will also turn him into a <spam class="np-strong">pro OneNote user</spam></spam>!</p>
+            </div>
+
+            <!--7 to md, less 12-->
+            <div class="col-md-7">
+                <!--Image-->
+                <a href="screenshot.html?img-name=screen-Help.png" target="_blank">
+                    <img class="img-fluid img-crisp-edges" src="images/screen-Help_640.png">
+                </a>
+
+                <!--Image links.-->
+                <div class="img-link-text">
+                    See <a href="screenshot.html?img-name=screen-Help.png"  target="_blank"  class="text-decoration-none">full screen
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-box-arrow-up-right align-baseline" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z" />
+                            <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+    
+    <!-- 
+        ****************************
+        Vision
+        ****************************
+    -->
+    <!--100%-->
+    <div class="container-fluid np-bgbanner mt-5">
+        <!--FIX: Bookmark con sticky-top con :target -->
+        <div id="vision"></div>
+        <!--Max: xl: 1140px (configurado en .scss)-->
+        <div class="container py-4">
+            <div class="row">
+                <div class="col">
+                    <p class="np2-h2">Vision</p>
+                    <p class="np-text-l" style="font-family: 'Architects Daughter', cursive; font-size: 22px;">We already know that <spam class="text-decoration-underline">OneNote is the most useful tool for students</spam>. <span class="mark2">We want to make everyone know!</span></p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--
+    <div class="container-fluid np-bgbanner mt-5 d-none" style="background-color: #4B53BC;">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col">
+                    <p class="np2-h2" style="color: white;">Vision</p>
+                    <p class="np-text-l" style="color: white; font-family: 'Architects Daughter', cursive; font-size: 22px;">We already know that <spam class="text-decoration-underline">OneNote is the most useful tool for students</spam>. <span class="mark_">We want to make everyone know!</span></p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    -->
+
+    <div class="container">
+        <!-- 
+            ****************************
+            Most relevant content and features
+            ****************************
+        -->
+        <div class="row mt-5">
+            <div class="col">
+                <!--FIX: Bookmark con sticky-top con :target -->
+                <div id="features"></div>
+                <p class="np2-h2">Most relevant content and features</spam></p>
                 <ul>
-                    <li>Choose a variant of the mini-template (posterior 6).</li>
+                    <!-- 
+                        ----------------------------
+                        Notebook main index
+                        ----------------------------
+                    -->
+                    <li class="ulli-features">
+                        <p class="np2-h3">Notebook main index</spam></p>
+                        <p class="text-body">Access to all classes, semester planning and calendar, dashboard for sticky notes, stickers and access to the most used templates to take notes.</p>
+                    
+                        <!--Image-->
+                        <a href="screenshot.html?img-name=screen-Index.png" target="_blank">
+                            <img class="img-fluid img-crisp-edges" src="images/screen-Index_640.png">
+                        </a>
+
+                        <!--Image links.-->
+                        <div class="img-link-text">
+                            See <a href="screenshot.html?img-name=screen-Index.png"  target="_blank"  class="text-decoration-none">full screen
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-box-arrow-up-right align-baseline" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z" />
+                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z" />
+                                </svg>
+                            </a>
+                            <br>
+                            See <a href="screenshot.html?img-name=screen-Index-empty.png" target="_blank" class="text-decoration-none">full screen (empty template)
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-box-arrow-up-right align-baseline" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z" />
+                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z" />
+                                </svg>
+                            </a><br>
+                        </div>
+                    </li>
+
+                    <!-- 
+                        ----------------------------
+                        Toolbar
+                        ----------------------------
+                    -->
+                    <li class="mt-5 ulli-features">
+                        <p class="np2-h3">Toolbar</spam></p>
+                        <p class="text-body">All pages and templates have a toolbar for quick access to the index and all the functionality of the notebook.</p>
+                        
+                        <!--Image-->
+                        <img class="img-fluid img-crisp-edges" src="images/screen-ToolBar.png">
+                    </li>
+
+                    <!-- 
+                        ----------------------------
+                        Class overview
+                        ----------------------------
+                    -->
+                    <li class="ulli-features mt-5">
+                        <p class="np2-h3">Class overview</spam></p>
+                        <p class="text-body">With information about the class, days and times, contact information of the teacher, access link to the school's web platform, important dates, access buttons to all class documents, useful contacts, etc.</p>
+                    
+                        <!--Image-->
+                        <a href="screenshot.html?img-name=screen-ClassOverview2.png" target="_blank">
+                            <img class="img-fluid img-crisp-edges" src="images/screen-ClassOverview2_640.png">
+                        </a>
+
+                        <!--Image links.-->
+                        <div class="img-link-text">
+                            See <a href="screenshot.html?img-name=screen-ClassOverview2.png"  target="_blank"  class="text-decoration-none">full screen
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-box-arrow-up-right align-baseline" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z" />
+                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z" />
+                                </svg>
+                            </a>
+                            <br>
+                            See <a href="screenshot.html?img-name=screen-ClassOverview2-empty.png" target="_blank" class="text-decoration-none">full screen (empty template)
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-box-arrow-up-right align-baseline" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z" />
+                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z" />
+                                </svg>
+                            </a><br>
+                        </div>
+                    </li>
+
+                    <!-- 
+                        ----------------------------
+                        Assignment tracker
+                        ----------------------------
+                    -->
+                    <li class="ulli-features mt-5">
+                        <p class="np2-h3">Assignment tracker</spam></p>
+                        <p class="text-body">List with all pending, in progress and completed assignments, their data and access to the assignment planner.</p>
+                    
+                        <!--Image-->
+                        <a href="screenshot.html?img-name=screen-AssingmentTracker.png" target="_blank">
+                            <img class="img-fluid img-crisp-edges" src="images/screen-AssingmentTracker_640.png">
+                        </a>
+
+                        <!--Image links.-->
+                        <div class="img-link-text">
+                            See <a href="screenshot.html?img-name=screen-AssingmentTracker.png"  target="_blank"  class="text-decoration-none">full screen
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-box-arrow-up-right align-baseline" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z" />
+                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z" />
+                                </svg>
+                            </a>
+                            <br>
+                            See <a href="screenshot.html?img-name=screen-AssingmentTracker-empty.png" target="_blank" class="text-decoration-none">full screen (empty template)
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-box-arrow-up-right align-baseline" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z" />
+                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z" />
+                                </svg>
+                            </a><br>
+                        </div>
+                    </li>
+
+                    <!-- 
+                        ----------------------------
+                        Assignment planner
+                        ----------------------------
+                    -->
+                    <li class="ulli-features mt-5">
+                        <p class="np2-h3">Assignment planner</spam></p>
+                        <p class="text-body">From here you can manage all the information of the assignment, dates, status, tags, instructions, tasks, materials, resources, links to the tracker, to the assignment of the school's web platform, to the class notes, all the information of the turn-in documents, comments and feedback from the teacher, the rubric, and much more.</p>
+                    
+                        <div class="row">
+                            <div class="col-7">
+                                <!--Image-->
+                                <a href="screenshot.html?img-name=screen-AssignmentPlanner.png" target="_blank">
+                                    <img class="img-fluid img-crisp-edges" src="images/screen-AssignmentPlanner_640.png">
+                                </a>
+    
+                                <!--Image links.-->
+                                <div class="img-link-text">
+                                    See <a href="screenshot.html?img-name=screen-AssignmentPlanner.png"  target="_blank"  class="text-decoration-none">full screen
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-box-arrow-up-right align-baseline" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z" />
+                                            <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z" />
+                                        </svg>
+                                    </a>
+                                    <br>
+                                    See <a href="screenshot.html?img-name=screen-AssignmentPlanner-empty.png" target="_blank" class="text-decoration-none">full screen (empty template)
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-box-arrow-up-right align-baseline" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z" />
+                                            <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z" />
+                                        </svg>
+                                    </a><br>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- 
+                        ----------------------------
+                        School Tools
+                        ----------------------------
+                    -->
+                    <li class="ulli-features mt-5">
+                        <p class="np2-h3">School Tools</spam></p>
+                        <p class="text-body">The most used posters by teachers and students with educational information for all levels.</p>
+                    
+                        <div class="d-flex align-items-start flex-wrap justify-content-around">
+                            <a class="mb-2" href="screenshot.html?img-name=screen-Tools-1.png" target="_blank"><img src="images/thumbnail-Tools-1.png"></a>
+                            <a class="mb-2" href="screenshot.html?img-name=screen-Tools-2.png" target="_blank"><img src="images/thumbnail-Tools-2.png"></a>
+                            <a class="mb-2" href="screenshot.html?img-name=screen-Tools-3.png" target="_blank"><img src="images/thumbnail-Tools-3.png"></a>
+                            <a class="mb-2" href="screenshot.html?img-name=screen-Tools-4.png" target="_blank"><img src="images/thumbnail-Tools-4.png"></a>
+                        </div>
+                        
+                        <!--Insertable templates for class and assignments-->
+                        <div class="col-5 text-body" style="margin-top: -50px;">
+                            <p class="np2-h4">More posters</p>
+                            <ul class="ul-inside">
+                                <li class="li-inside mt-3">Numbers</li>
+                                <li class="li-inside">Math Symbols</li>
+                                <li class="li-inside">Addition</li>
+                                <li class="li-inside">Subtraction</li>
+                                <li class="li-inside">Division</li>
+                                <li class="li-inside">Multiplication</li>
+                                <li class="li-inside">Place value</li>
+                                <li class="li-inside">Fractions & Percentages</li>
+                                <li class="li-inside">Roman Numerals</li>
+                                <li class="li-inside">2D Shapes</li>
+                                <li class="li-inside">3D Shapes</li>
+                                <li class="li-inside">Pythagorean board</li>
+                                <li class="li-inside">Area, Volume & Perimeter</li>
+                                <li class="li-inside">Angles</li>
+                                <li class="li-inside">Periodic Table</li>
+                                <li class="li-inside">Mathematical formulas</li>
+                                <li class="li-inside">Shapes</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!-- 
+                        ----------------------------
+                        Note taking templates
+                        ----------------------------
+                    -->
+                    <li class="ulli-features mt-5">
+                        <p class="np2-h3">Note taking templates</spam></p>
+                        <p class="text-body"><spam class="np-strong">264</spam> note templates in <spam class="np-strong">9 colors</spam> (3 for dark mode) including 7 different Cornell system designs. All well organized in an index for easy access. Each template has a header with basic data of the note, pager, section for #tags and the toolbar for quick access to the notebook functionalities.</p>
+
+                        <div class="row">
+                            <div class="col-6">
+                                <a href="screenshot.html?img-name=screen-NotesTemplates.png" target="_blank"><img class="img-fluid img-crisp-edges" src="images/thumbnail-Notes-1.png"></a><br>
+                                
+                                <!--Image links.-->
+                                <div class="img-link-text">
+                                    See <a href="screenshot.html?img-name=screen-NotesTemplates.png"  target="_blank"  class="text-decoration-none">full screen
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-box-arrow-up-right align-baseline" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z" />
+                                            <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z" />
+                                        </svg>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="col-6">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="row mb-3">
+                                            <a href="screenshot.html?img-name=screenl-Notes-e1.png" target="_blank">
+                                                <img class="img-fluid img-crisp-edges" src="images/thumbnail-Notes-e1.png">
+                                            </a><br>
+                                            <!--Image links.-->
+                                            <div class="img-link-text">
+                                                See <a href="screenshot.html?img-name=screenl-Notes-e1.png"  target="_blank"  class="text-decoration-none">full screen
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-box-arrow-up-right align-baseline" viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z" />
+                                                        <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z" />
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <a href="screenshot.html?img-name=screenl-Notes-e3.png" target="_blank">
+                                                <img class="img-fluid img-crisp-edges" src="images/thumbnail-Notes-e3.png">
+                                            </a><br>
+                                            <!--Image links.-->
+                                            <div class="img-link-text">
+                                                See <a href="screenshot.html?img-name=screenl-Notes-e3.png"  target="_blank"  class="text-decoration-none">full screen
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-box-arrow-up-right align-baseline" viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z" />
+                                                        <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z" />
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="row mb-3">
+                                            <a href="screenshot.html?img-name=screenl-Notes-e2.png" target="_blank">
+                                                <img class="img-fluid img-crisp-edges" src="images/thumbnail-Notes-e2.png">
+                                            </a><br>
+                                            <!--Image links.-->
+                                            <div class="img-link-text">
+                                                See <a href="screenshot.html?img-name=screenl-Notes-e2.png"  target="_blank"  class="text-decoration-none">full screen
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-box-arrow-up-right align-baseline" viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z" />
+                                                        <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z" />
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <a href="screenshot.html?img-name=screenl-Notes-e4.png" target="_blank">
+                                                <img class="img-fluid img-crisp-edges" src="images/thumbnail-Notes-e4.png">
+                                            </a>
+                                            <br>
+                                            <!--Image links.-->
+                                            <div class="img-link-text">
+                                                See <a href="screenshot.html?img-name=screenl-Notes-e4.png"  target="_blank"  class="text-decoration-none">full screen
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-box-arrow-up-right align-baseline" viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z" />
+                                                        <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z" />
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 
+                        ----------------------------
+                        Stickers
+                        ----------------------------
+                        -->
+                        <li class="ulli-features mt-5">
+                            <p class="np2-h3">Stickers</spam></p>
+                            <p class="text-body">Lots of stickers! <spam class="np-strong">Transparent</spam> and <spam class="np-strong">cropped</spam> PNGs, specifically designed in shape, color and size to perfectly match the templates. All organized by color and style.</p>
+                        
+                            <div class="d-flex align-items-start flex-wrap justify-content-around">
+                                <div>
+                                    <a class="mb-2" href="screenshot.html?img-name=screen-StickersIndex.png" target="_blank"><img src="images/thumbnail-Stickers-1.png"></a><br>
+                                    <!--Image links.-->
+                                    <div class="img-link-text">
+                                        See <a href="screenshot.html?img-name=screen-StickersIndex.png"  target="_blank"  class="text-decoration-none">full screen
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-box-arrow-up-right align-baseline" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z" />
+                                                <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                                <div>
+                                    <a class="mb-2" href="screenshot.html?img-name=screen-StickersPink.png" target="_blank"><img src="images/thumbnail-Stickers-2.png"></a><br>
+                                    <!--Image links.-->
+                                    <div class="img-link-text">
+                                        See <a href="screenshot.html?img-name=screen-StickersPink.png"  target="_blank"  class="text-decoration-none">full screen
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-box-arrow-up-right align-baseline" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z" />
+                                                <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <a class="mb-2" href="screenshot.html?img-name=screen-StickersFunny.png" target="_blank"><img src="images/thumbnail-Stickers-3.png"></a><br>
+                                    <!--Image links.-->
+                                    <div class="img-link-text">
+                                        See <a href="screenshot.html?img-name=screen-StickersFunny.png"  target="_blank"  class="text-decoration-none">full screen
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-box-arrow-up-right align-baseline" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z" />
+                                                <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!-- 
+                            ----------------------------
+                            Mini-templates
+                            ----------------------------
+                        -->
+                        <li class="ulli-features mt-5">
+                            <p class="np2-h3">Mini-templates</spam></p>
+                            <p class="text-body">Many mini-templates to be able to <spam class="np-strong">extend</spam> and <spam class="np-strong">customize</spam> the main templates, notes and turn-in documents. Here are just a few examples.</p>
+                        
+                            <!--Image-->
+                            <a href="screenshot.html?img-name=screen-MiniTemplates.png" target="_blank">
+                                <img class="img-fluid img-crisp-edges" src="images/thumbnail-MiniTemplates.png">
+                            </a>
+
+                            <!--Image links.-->
+                            <div class="img-link-text">
+                                See <a href="screenshot.html?img-name=screen-MiniTemplates.png"  target="_blank"  class="text-decoration-none">full screen
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-box-arrow-up-right align-baseline" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z" />
+                                        <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </li>
+
+                        <!-- 
+                            ----------------------------
+                            More templates
+                            ----------------------------
+                        -->
+                        <li class="ulli-features mt-5">
+                            <p class="np2-h3">More templates</spam></p>
+                            <p class="text-body">Insertable templates for <spam class="np-strong">class</spam> and <spam class="np-strong">assignments</spam>.</p>
+                        
+                            <!--Insertable templates for class and assignments-->
+                            <ul class="ul-inside text-body">
+                                <li class="li-inside mt-3">Essay</li>
+                                <li class="li-inside">Pomodoro tracker</li>
+                                <li class="li-inside">Reading summary</li>
+                                <li class="li-inside">Reading log</li>
+                                <li class="li-inside">Brain dump</li>
+                                <li class="li-inside">Mind map</li>
+                                <li class="li-inside">Contacts</li>
+                                <li class="li-inside">Notes</li>
+                                <li class="li-inside">To Do</li>
+                                <li class="li-inside">Handouts</li>
+                                <li class="li-inside">Quizzes</li>
+                                <li class="li-inside">Grades</li>
+                                <li class="li-inside">Definitions</li>
+                                <li class="li-inside">Concepts / Terms</li>
+                                <li class="li-inside">Vocabulary</li>
+                                <li class="li-inside">Readings</li>
+                                <li class="li-inside">Materials</li>
+                                <li class="li-inside">Supplies</li>
+                                <li class="li-inside">Study session log</li>
+                                <li class="li-inside">Study time</li>
+                                <li class="li-inside">Meetings</li>
+                                <li class="li-inside">Result tracker</li>
+                                <li class="li-inside">Attendance log</li>
+                                <li class="li-inside">Reflection</li>
+                            </ul>
+                        </li>    
                 </ul>
-            </li>
-            <li>It appears completely unstyled.</li>
-            <li>Structurally, it's still a list.</li>
-            <li>However, this style only applies to immediate child elements.</li>
-            <li>This may still come in handy in some situations.</li>
-        </ul>
 
-        <p class="ct2">Texto normal. Los blocs de notas de clase de OneNote tienen un área de trabajo personal para cada alumno, una Biblioteca de contenido de documentos y un Espacio de colaboración para lecciones y actividades creativas.</p>
-        
-        
-
-        <img src="images/index-screen-sample.png" alt="" class="img-fluid">
-        
-
-        <div class="container">
-            <a href="screenshot.html?img-name=index-screen-sample.png" target="_blank" rel="noopener noreferrer">Full screen...</a>
-            <button type="button" class="btn btn-primary rounded-0">
-                Aceptar
-            </button>
-    
-            <button type="button" class="btn btn-onenote-color rounded-0">
-                Aceptar
-            </button>
-    
-            <button type="button" class="btn btn-danger">
-                Aceptar
-            </button>
-    
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary rounded-0" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                Launch static backdrop modal
-            </button>
+            </div>
         </div>
-        
+    </div>
 
-        <!-- Modal -->
-        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-            aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        ...
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary rounded-0" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary rounded-0">Understood</button>
-                    </div>
+
+    <!-- 
+        ****************************
+        Footer
+        ****************************
+    -->
+    <!--100%-->
+    <div class="container-fluid np-bgbanner mt-5">
+        <!--Max: xl: 1140px (configurado en .scss)-->
+        <div class="container py-4">
+            <div class="row">
+                <div class="col py-5 align-bottom">
+                    <p class="">
+                        Contact: <a class="text-body" href="https://www.linkedin.com/in/estebanhugosomma/?locale=en_US" target="_blank" rel="noopener noreferrer">Esteban H. Somma</a>
+                    </p>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="container">
-        <!-- https://icons.getbootstrap.com/ -->
-        <img src="node_modules/bootstrap-icons/bootstrap-icons.svg" alt="Bootstrap" width="32" height="32">
-        <i class="bi-alarm" style="font-size: 2rem; color: cornflowerblue;"></i>
-        <i class="bi bi-youtube"></i>
-        asdasd
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube"
-            viewBox="0 0 16 16">
-            <path
-                d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
-        </svg>
-        <div class="text-primary">This is default primary text</div>
-        <div class="text-primary text-opacity-75">This is 75% opacity primary text</div>
-        <div class="text-primary text-opacity-50">This is 50% opacity primary text</div>
-        <div class="text-primary text-opacity-25">This is 25% opacity primary text</div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate alias odio</p>
-    </div>
-    <div class="container bg-warning" style="margin-bottom: 0px;">
-        <p class="text-black">.text-black</p>
-        <p class="text-black-25">.text-black-25</p>
-        <p class="text-black-50">.text-black-50</p>
-        <p class="text-black-75">.text-black-75</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate alias odio</p>
-    </div>
-    <div class="container-fluid bg-danger">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate alias odio</p>
-    </div>
-
-    <div class="container bg-warning">
-        <div class="d-flex bg-info justify-content-center">
-            <div style="min-width: 300px; background: #34850f;">Hola</div>
-        </div>
-    </div>
-
-    <div class="container bg-info bg-opacity-50">
-        <div class="d-flex justify-content-center">
-            <div style="min-width: 500px;">
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">First</th>
-                            <th scope="col">Last</th>
-                            <th scope="col">Handle</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td colspan="2">Larry the Bird</td>
-                            <td>@twitter</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
-
-    <script src="bootstrap.min.js"></script>
+    <!--<script src="bootstrap.min.js"></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
 </body>
-
 </html>

@@ -1,0 +1,356 @@
+//$primary: #83379b;
+
+// Required
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+@import "node_modules/bootstrap/scss/root";
+
+// Create your own map.
+$custom-colors: (
+  "onenote-color": #83379b,
+  "planner-link": #448CD5
+);
+
+$font-family-base: "Segoe UI";
+$body-color: #3F3F3F;
+
+// Merge the maps.
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+// Botones cuadrados.
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.btn {
+	box-shadow: none !important
+}
+
+.np-bgbanner {
+  background-color: #F2F2F2;
+}
+
+.np-hbanner {
+  font-family: 'Segoe UI';
+  font-weight: 600;
+  font-size: 33pt;
+  margin-top: 16pt;
+  margin-bottom: 10pt;
+  color: #4B53BC;//#6264A7;
+}
+
+.mp-hbanner-small{
+  font-family: 'Segoe UI';
+  font-weight: 500;
+  font-size: 13pt;
+  margin-top: -14pt;
+  margin-bottom: 13pt;
+  color: #4B53BC;
+}
+
+.np-textbanner {
+  font-family: 'Segoe UI';
+  font-weight: 400;
+  font-size: 18pt;
+  line-height: 22pt;
+  color: #000000;
+}
+
+.np2-h2 {
+  font-family: 'Segoe UI';
+  font-weight: 400;
+  font-size: 25pt;
+  //margin-top: 16pt;
+  margin-bottom: 6pt;
+  color: #6264A7;
+}
+
+.np2-h3 {
+  font-family: 'Segoe UI';
+  font-weight: 500;
+  font-size: 13pt;
+  margin-top: 14pt;
+  margin-bottom: 4pt;
+  color: #6264A7;
+}
+
+.np2-h4 {
+    font-family: 'Segoe UI';
+    font-weight: 400;
+    font-size: 11.5pt;
+    margin-top: 0pt;
+    margin-bottom: 2pt;
+    color: #6264A7;
+  }
+
+// NotePlanners: h1.
+.np-h1 {
+  font-family: 'Segoe UI';
+  font-weight: 300;
+  font-size: 25pt;
+  margin-top: 16pt;
+  margin-bottom: 8pt;
+  color: #0C0C0C;
+}
+
+.np-h2 {
+  font-family: 'Segoe UI';
+  font-size: 18pt;
+  margin-top: 14pt;
+  margin-bottom: 6pt;
+  color: #0C0C0C;
+}
+
+.np-h3 {
+  font-family: 'Segoe UI';
+  font-weight: 500;
+  font-size: 13pt;
+  margin-top: 14pt;
+  margin-bottom: 4pt;
+  color: #0C0C0C;
+}
+
+.np-text-l {
+  font-family: 'Segoe UI';
+  font-weight: 350;
+  font-size: 13pt;
+  color: #3F3F3F;
+}
+
+.np-text {
+  //margin: 0in;
+  font-family: 'Segoe UI';
+  //font-size: 10.5pt;
+  color: #3F3F3F;
+}
+
+
+// NotePlanners: Note 1.
+.np-note1 {
+  margin-top: -8pt; 
+  margin-bottom: 10t; 
+  font-family: 'Segoe UI'; 
+  font-size: 9.0pt; 
+  color: #A5A5A5;
+}
+
+// Hace que las imágenes con fluid de bootstrap no se blureen tanto.
+.img-crisp-edges {
+    image-rendering: -webkit-optimize-contrast; 
+    image-rendering: crisp-edges;
+}
+
+// Texto para links a fullscreen de screenshots.
+.img-link-text {
+  font-size: 9pt;
+}
+
+// Highlighter.
+mark {
+  margin: 0 -0.4em;
+  padding: 0.1em 0.4em;
+  border-radius: 0.8em 0.3em;
+  background: transparent;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 225, 0, 0.1),
+    rgba(255, 225, 0, 0.7) 4%,
+    rgba(255, 225, 0, 0.3)
+  );
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+// Highlighter.
+.mark2 {
+    margin: 0 -0.4em;
+    padding: 0.1em 0.4em;
+    border-radius: 0.8em 0.3em;
+    background: transparent;
+    background-image: linear-gradient(
+      to right,
+      rgba(0, 255, 255, 0.1),
+      rgba(0, 255, 255, 0.7) 4%,
+      rgba(0, 255, 255, 0.3)
+    );
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+  }
+
+// NotePlanners a.
+a:link a:hover a:visited {
+  color: #8a1a6e !important;
+}
+
+// NotePlanners: ol con la numeración anidada con el sub índice.
+// 1.
+// 2.
+//    2.1
+//    2.2
+// 3.
+ol {
+    counter-reset: item;
+    margin-bottom: 2rem;
+    margin-top: -8px;
+}
+  
+ol > li {
+    counter-increment: item;
+    margin-bottom: 4pt;
+    padding-left: 8pt;
+}
+  
+ol ol > li {
+    display: block;
+}
+  
+ol ol > li:before {
+    content: counters(item, ".") ". ";
+    margin-left: -30px;
+    padding-right: 8pt;
+}
+
+.ul-inside {
+    list-style-type: square;
+}
+.li-inside {
+    margin-top: -4px;
+    margin-left: -17px;
+}
+
+// NotePlanners strong.
+.np-strong {
+    font-weight: 600; 
+    color: black;
+}
+/*
+b, strong {
+    font-weight: 600 !important;
+}
+*/
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  //xxl: 1320px // MODI: (EHS) Es muy grande.
+);
+
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+
+// NotePlanners ol.
+p {
+    margin-bottom: 1.5rem;
+}
+
+// NotePlanners ol.
+// NOTE: Solo funciona despues del import de bootstrap.
+ol {
+    counter-reset: item;
+    margin-bottom: 2rem;
+    margin-top: -8px;
+}
+
+ul {
+  //margin-bottom: 2rem !important; 
+  margin-top: -12px !important; 
+  padding-left: 50px !important; 
+}
+
+ul > li {
+  margin-bottom: 3pt !important; 
+  padding-left: 8pt !important; 
+}
+
+.ulli-features {
+    color: #6264A7;
+}
+
+.drop-custom {
+    margin-bottom: 0pt;
+    margin-left: -5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+// NotePlanners text handwrite 18px.
+.np-text-handwrite-18 {
+    font-family: 'Architects Daughter', cursive; 
+    font-size: 18px;
+}
+
+// NotePlanners note 1 background.
+.np-note1-bg {
+    background-color: #F6F6F6; 
+    margin-bottom: 12px;
+    border-radius: 0.25rem !important;
+    padding: 1rem !important;
+    margin-right: 1rem !important;
+    margin-left: 1rem !important;
+}
+.np-note1-icon-bg {
+    flex: 0 0 50px;
+}
+
+// OneNote header.
+.on-header {
+    background-color: #FAFAFA !important;
+}
+
+.on-header-version {
+    color: blueviolet; 
+    font-weight: 600;
+}
+
+// OneNote date/time under title style.
+.on-date-time-title {
+    margin: 0in;
+    font-family: Calibri;
+    font-size: 10.0pt;
+    color: #767676;
+    margin-top: -16px;
+}
+
+// OneNote HR title style.
+.on-hr-title {
+  //width: 500px; 
+  max-width: 500px;
+  margin-top: -3px; 
+  margin-left: -12px;
+}
+
+// FIX: Bookmark con sticky-top de bootstrap. 
+// Si se usa sticky-top de bootstrap, al usar bookmarks e ir al destino, 
+// quedan debajo del sticky.
+:target {
+  display: block;
+  position: relative;
+  top: -120px; 
+  visibility: hidden;
+}
+
+// Go to top button.
+#topButton {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  background-color: #4B53BC;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+#topButton:hover {
+  background-color: #555;
+}
